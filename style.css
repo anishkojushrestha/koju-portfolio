@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.dark-mode {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+a{
+    color: black;
+}
+header{
+    box-shadow: 0px -20px 2px 20px #333;
+}
+.header{
+    margin: 0% 8% 0% 8%;
+    
+}
+.home-section{
+    margin: 5% 8% 0% 8%;
+}
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+.nav-menu li a{
+    font-weight: bold;
+}
+.nav-menu li a:hover{
+    color: #4458dc;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font: 500 14px/50px "Rubik", sans-serif;
+    
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #4458dc;
+    font: 500 14px/50px "Rubik", sans-serif;
+}
+.home-section-left {
+    width: 50%;
+}
+.list-link{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+}
+.socialmedia-link ul li a{
+    border-bottom: 1px solid #c1bdbd;
+}
+.home-section-left h1{
+    font-size: 35px;
+}
+.home-section-right{
+    width: 50%;
+}
+.hover-action{
+    color: #4458dc;
+}
