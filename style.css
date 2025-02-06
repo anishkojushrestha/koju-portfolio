@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@ body {
     background-color: white;
     color: black;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background-image: url(image/noise.51a05f55.png);
 }
 .dark-mode {
     margin: 0;
@@ -20,13 +22,14 @@ a{
 }
 header{
     box-shadow: 0px -20px 2px 20px #333;
+    
 }
 .header{
     margin: 0% 8% 0% 8%;
     
 }
 .home-section{
-    margin: 5% 8% 0% 8%;
+    margin: 5% 8% 0% 11%;
 }
 .flex {
     display: flex;
@@ -69,24 +72,264 @@ header{
     color: #4458dc;
     font: 500 14px/50px "Rubik", sans-serif;
 }
-.home-section-left {
-    width: 50%;
-}
+
 .list-link{
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0px;
 }
+.socialmedia-link{
+    margin-top: 5%;
+}
 .socialmedia-link ul li a{
     border-bottom: 1px solid #c1bdbd;
 }
 .home-section-left h1{
     font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 50px;
+
+}
+.home-section-left p{
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.7;
+    line-height: 28px;
+}
+.list-link li a{
+opacity: 0.7;
+font-size: 18px;
+}
+.list-link li a:hover{
+    opacity: 10;
 }
 .home-section-right{
     width: 50%;
 }
+.home-section-left {
+    width: 50%;
+}
 .hover-action{
     color: #4458dc;
+}
+/* ------------about-section--------- */
+.about-section-left h1{
+    font-size: 35px;
+}
+.about-section-right{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section-right img {
+    width: 60%;
+    float: right;
+    border-radius: 10px;
+}
+.about-section-left {
+    width: 55%;
+}
+.about-section,.contact-section {
+    margin: 5% 8% 0% 11%;
+}
+#viewresume:hover,#downloadresume:hover{
+    border: 1px solid #4458dc;
+    border-radius: 10px;
+}
+#viewresume{
+    font-family: 'Rubik', sans-serif;
+    opacity: 0.8;
+    font-weight: bold;
+    padding: 4% 18%;
+    margin-top: 2%;
+    
+}
+#downloadresume{
+    padding: 6% 4%;
+}
+.about-section-right-resume{
+    display: flex;flex-direction: row;width: 60%;gap: 5%;
+}
+/* --------------contact------ */
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    font-family: 'Rubik', sans-serif;
+    width: 200%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #4458dc;
+    outline: none;
+}
+
+/* Submit Button */
+.btn-submit {
+    font-family: 'Rubik', sans-serif;
+    background: #4458dc;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #4458dc;
+}
+/* ------------------------------------- */
+
+@media (max-width: 1000px) {  
+    .about-section {
+        flex-direction: column-reverse !important; /* Moves right section to top */
+        align-items: center;
+    }
+
+    .about-section-right {
+        width: 80%; /* Adjust width for better balance */
+    }
+
+    /* Font size adjustments */
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    .contact-section {
+        max-width: 80%;
+    }
+}
+
+/* Small devices (≤ 767px) */
+@media (max-width: 767px) {  
+    .about-section {
+        flex-direction: column-reverse !important; /* Ensure right section stays on top */
+        align-items: center;
+    }
+
+    .about-section-right {
+        width: 100%;
+    }
+
+    /* Adjust font size */
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    contact-section {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .contact-section h2 {
+        font-size: 22px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Extra Small Devices (≤ 480px) */
+@media (max-width: 480px) {  
+    .about-section {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .about-section-right {
+        width: 100%;
+    }
+
+    /* Reduce font size for better readability */
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .contact-section {
+        padding: 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+    }
 }
