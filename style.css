@@ -215,18 +215,54 @@ font-size: 18px;
     background: #4458dc;
 }
 /* ------------------------------------- */
-/* Small devices (≤ 767px) */
-@media (max-width: 767px) {  
+
+@media (max-width: 1000px) {  
     .about-section {
-        flex-direction: column-reverse !important; /* Ensures right section stays on top */
+        flex-direction: column-reverse !important; /* Moves right section to top */
         align-items: center;
     }
 
-    .about-section-right {
-        width: 100%;
+    .about-section-right,.about-section-left {
+        width: 80%; /* Adjust width for better balance */
     }
 
     /* Font size adjustments */
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    .contact-section {
+        max-width: 80%;
+    }
+}
+
+/* Small devices (≤ 767px) */
+@media (max-width: 767px) {  
+    .about-section {
+        flex-direction: column-reverse !important; /* Ensure right section stays on top */
+        align-items: center;
+        margin: 0px;
+    }
+
+    .about-section-right{
+        width: 100%;
+    }
+    .about-section-left {
+        width: 80%;
+    }
+
+    /* Adjust font size */
     body {
         font-size: 16px;
     }
@@ -242,8 +278,7 @@ font-size: 18px;
     p {
         font-size: 14px;
     }
-
-    .contact-section {
+    contact-section {
         max-width: 90%;
         padding: 15px;
     }
@@ -268,6 +303,7 @@ font-size: 18px;
     .about-section {
         padding: 10px;
         text-align: center;
+        margin: 0px;
     }
 
     .about-section-right {
@@ -289,31 +325,17 @@ font-size: 18px;
 
     p {
         font-size: 12px;
+        width: 100%;
     }
-
     .contact-section {
         padding: 10px;
     }
 
     .contact-section h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .btn-submit {
         font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Adjust form input fields for mobile */
-    .input-group input,
-    .input-group textarea {
-        width: 100%;  /* Ensure they take full width */
-        font-size: 14px;
-    }
-
-    /* Adjust button to fit mobile screens */
-    .btn-submit {
-        font-size: 14px;
-        padding: 10px 15px;
     }
 }
