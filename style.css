@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     background-color: white;
     color: black;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Rubik', sans-serif;
     background-image: url(image/noise.51a05f55.png);
 }
 .dark-mode {
@@ -14,9 +14,8 @@ body {
     box-sizing: border-box;
     background-color: black;
     color: white;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Rubik', sans-serif;
   }
-
 a{
     color: black;
 }
@@ -33,6 +32,19 @@ header{
 }
 .flex {
     display: flex;
+
+}
+.opacity-0-7{
+    opacity: 0.7;    
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-direction-row{
+    flex-direction: row;
+}
+.list-style-none{
+    list-style: none;
 }
 
 .justify-content-center {
@@ -119,13 +131,21 @@ font-size: 18px;
 .about-section-left h1{
     font-size: 35px;
 }
+.about-section-left h2{
+    opacity: 0.7;
+}
+.about-section p{
+    font-family: 'Rubik', sans-serif;opacity: 0.7;    line-height: 35px;
+}
 .about-section-right{
     width: 45%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-
+.about-section-left ul li img{
+    width: 3%;
+}
 .about-section-right img {
     width: 60%;
     float: right;
