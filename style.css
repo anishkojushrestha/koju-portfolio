@@ -154,7 +154,7 @@ font-size: 18px;
 .about-section-left {
     width: 55%;
 }
-.about-section,.contact-section {
+.about-section,.contact-section,.blog-section {
     margin: 5% 8% 0% 11%;
 }
 #viewresume:hover,#downloadresume:hover{
@@ -233,6 +233,13 @@ font-size: 18px;
 
 .btn-submit:hover {
     background: #4458dc;
+}
+/* ------------------------------------- */
+
+/* --------Blog Section---------- */
+
+.blog-section {
+    
 }
 /* ------------------------------------- */
 
